@@ -1,7 +1,10 @@
 import React from 'react';
+import { UserContext } from '../../UserContext';
+import PhotoCommentForm from './PhotoCommentForm';
 
-const PhotoComents = ({ id, comments }) => {
-  return <div>PhotoComents</div>;
+const PhotoComments = ({ id, comments }) => {
+  const { login } = React.useContext(UserContext);
+  return <div>{login && <PhotoCommentForm id={id} />}</div>;
 };
 
-export default PhotoComents;
+export default PhotoComments;

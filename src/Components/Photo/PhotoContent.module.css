@@ -38,9 +38,9 @@
     grid-template-columns: minmax(20rem, 40rem);
     overflow-y: auto;
   }
-}
-.img {
-  grid-row: 1;
+  .img {
+    grid-row: 1;
+  }
 }
 
 .author {

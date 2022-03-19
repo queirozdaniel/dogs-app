@@ -26,7 +26,11 @@ const PhotoContent = ({ data }) => {
           </ul>
         </div>
       </div>
-      <PhotoComments id={photo.id} comments={comments} />
+      <PhotoComments
+        className={styles.comments}
+        id={photo.id}
+        comments={comments}
+      />
     </div>
   );
 };
