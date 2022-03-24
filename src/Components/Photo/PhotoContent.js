@@ -36,6 +36,7 @@ const PhotoContent = ({ data, single }) => {
         </div>
       </div>
       <PhotoComments
+        single={single}
         className={styles.comments}
         id={photo.id}
         comments={comments}
