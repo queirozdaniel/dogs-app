@@ -25,13 +25,15 @@ const LoginPasswordReset = () => {
 
   async function handleSubmit(event) {
     event.preventDefault();
-    const { url, options } = PASSWORD_RESET({
-      login,
-      key,
-      password: password.value,
-    });
-    const { response } = await request(url, options);
-    if (response.ok) navigate('/login');
+    if (password.validate()) {
+      const { url, options } = PASSWORD_RESET({
+        login,
+        key,
+        password: password.value,
+      });
+      const { response } = await request(url, options);
+      if (response.ok) navigate('/login');
+    }
   }
 
   return (
