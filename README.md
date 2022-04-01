@@ -1,5 +1,12 @@
-# Projeto com React e React Router
+# Projeto com Dogs do Curso React Completo - Origamid
 
-Para rodar projeto
+Para subir projeto
 
-### `npm start`
+`npm start`
+
+Libs utilizadas:
+
+- React: Latest
+- React Dom: Latest
+- React Router: ^6
+- Victory: Latest
